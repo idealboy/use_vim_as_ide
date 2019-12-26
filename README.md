@@ -2240,3 +2240,41 @@ https://www.jianshu.com/p/cbb242026ff2
 
 <leader>cc
 <leader>cｕ
+	
+	
+依赖liblzma
+configure: error: Package requirements (liblzma) were not met:
+
+No package 'liblzma' found
+解决方法：安装XZ Utils
+https://www.tukaani.org/xz/
+
+
+vim搜索插件ctrlsf
+
+安装: 
+
+Make sure you have ack or ag installed. 
+
+建议安装ag，更快，且安装起来更简单一点 
+
+http://geoff.greer.fm/ag/ 
+
+wget http://geoff.greer.fm/ag/releases/the_silver_searcher-0.27.0.tar.gz 
+tar -zxvf the_silver_searcher-0.27.0.tar.gz 
+./configure 
+make 
+sudo make install 即安装ag 
+
+在~/.vimrc 设置 
+let g:ctrlsf_ackprg = 'ag'   // 设置ctrlsf 使用ag 
+
+
+In vundle: 
+Plugin 'dyng/ctrlsf.vim' 
+
+然后PluginInstall 即可安装 ctrlsf。 
+
+let g:ctrlsf_open_left = 0  // 表示窗口在左边还是右边打开 
+但在OS X 则 
+let g:ctrlsf_position = "right"  // "left" 
