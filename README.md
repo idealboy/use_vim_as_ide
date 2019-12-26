@@ -2222,3 +2222,21 @@ npm -g install instant-markdown-d
 * 怎样的 IDE 才算好？对于初入开发的人员而言，Code::Blocks 是最易上手的选择；对于我这类喜欢折腾、追求效率、愿意用脑力换体力的人来说，vim 搭配各类插件是好的 IDE；对于 Donald Knuth 这等宗师，他们站在整个系统的层面，bash 加上几个命令行工具也是某种意义上的 IDE。所以，只要你能得心应手地完成软件开发任务，又察觉不到工具的存在，那这就是最适合你的 IDE。
 
 末了，写作的过程，是知识体系完整重构的过程，理清了思路、加深了记忆。如果它再能引发你的一点思绪，或许，这就是价值！
+
+https://www.jianshu.com/p/cbb242026ff2
+
+在文件中include的file文件名上敲 gf 就会进入被include的文件
+
+浏览完毕，跳回来只需要 <c-o>，是不是很容易
+
+
+命令 :ls 可查看当前已打开的buffer
+命令 :b num 可切换buffer (num为buffer list中的编号)
+
+其它命令:
+:bn -- buffer列表中下一个 buffer
+:bp -- buffer列表中前一个 buffer
+:b# -- 你之前所在的前一个 buffer
+
+<leader>cc
+<leader>cｕ
